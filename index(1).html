@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DonutSMP Application</title>
+    <link rel="stylesheet" href="application-styles-donutsmp.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="background-gradient"></div>
+        <div class="floating-particles"></div>
+
+        <!-- Welcome Screen -->
+        <section id="welcomeScreen" class="screen active">
+            <div class="welcome-content">
+                <div class="brand-section">
+                    <div class="logo-container">
+                        <div class="logo-icon">🍩</div>
+                    </div>
+                    <h1 class="brand-title">DonutSMP</h1>
+                    <p class="brand-subtitle">Apply to join the best SMP experience!</p>
+                </div>
+                <button id="startButton" class="primary-button">
+                    <span class="button-text">Start Application</span>
+                    <div class="button-ripple"></div>
+                </button>
+            </div>
+        </section>
+
+        <!-- Application Screen -->
+        <section id="applicationScreen" class="screen">
+            <div class="application-content">
+                <div class="form-header">
+                    <h1>DonutSMP Application</h1>
+                    <p>Please fill out the form below to apply.</p>
+                </div>
+                <form id="applicationForm" class="modern-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="discordName">Discord Name</label>
+                            <input type="text" id="discordName" name="discordName" required placeholder="YourDiscord#1234">
+                        </div>
+                        <div class="form-group">
+                            <label for="discordId">Discord ID</label>
+                            <input type="text" id="discordId" name="discordId" required placeholder="123456789012345678">
+                        </div>
+                        <div class="form-group">
+                            <label for="minecraftName">Minecraft Username</label>
+                            <input type="text" id="minecraftName" name="minecraftName" required placeholder="Notch">
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="number" id="age" name="age" required placeholder="16">
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="motivation">Why do you want to join DonutSMP?</label>
+                            <textarea id="motivation" name="motivation" required placeholder="Write a few sentences..."></textarea>
+                        </div>
+                    </div>
+                    <div class="submit-button">
+                        <button type="submit" class="primary-button">
+                            <i class="fas fa-paper-plane"></i>
+                            <span class="button-text">Submit Application</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="application-script-donutsmp.js"></script>
+</body>
+</html>
